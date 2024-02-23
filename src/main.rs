@@ -14,7 +14,10 @@ fn main() {
         "searching for {} in file {}",
         config.query, config.file_path
     );
-    run(config);
+    if let Err(e) = run(config) {
+        println!("application err: {e}");
+        process::exit(1);
+    }
 }
 
 fn run(config: Config) -> Result<(), Box<dyn Error>> {
