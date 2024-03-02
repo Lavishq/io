@@ -1,1 +1,3 @@
-problem parsing args: not enuggh args
+searching for to in file sometext.txt
+or maybe victor 
+ahhh, i have too many aliases as an alias_user
